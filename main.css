@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+}
+.scroll{
+    overflow: hidden;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+.animation{
+    opacity: 0;
+}
+.myButton {
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Lato';
+	font-size:1.2rem;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+    border: solid black;
+    font-weight: 200;
+}
+.myButton:hover {
+	background-color: #404040;
+    border: solid #404040;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.text-container{
+    text-align: center;
+}
+#thesecondcontainer p{
+    padding-right: 60px;
+    padding-left: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+h2{
+    font-family: 'tuesdayNight';
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+h3{
+    font-family: 'tuesdayNight';
+    text-align: center;
+    font-size: 2.6rem;
+    color: black;
+    margin-top: 15px;
+}
+.container{
+    padding: 0;
+}
+/* ==========================ID=========================== */
+#thesecondcontainer{
+    margin-top: 20%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#thesecondcontainer img{
+    width: 100%;
+    border: solid black 20px;
+}
+
+#thesecondcontainer h2{
+    position: relative;
+    left: -30px;
+    font-size: 4rem;
+    text-align: left;
+}
+#home-page-banner{
+    background-color: white;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 25vh;
+}
+#logo-img{
+    max-width: 380px;
+    border-radius: 50%;
+}
+#logo{
+    width: 40%;
+}
+#logo-img-responsive{
+    display: none;
+}
+@font-face{
+    font-family: 'tuesdayNight';
+    src: url(../TuesdayNight-Regular.otf);
+}
+.flex-container{
+    display: flex;
+}
+.img-container{
+    max-width: 35%;
+}
+/* ==========================CLASSES=========================== */
+.triple{
+    width: 100%;
+}
+.row{
+    justify-content: center;
+}
+.col-lg-4{
+    text-align: center;
+}
+.row{
+    margin-top: 70px;
+}
+.col-lg-4 h2{
+    text-align: left;
+}
+@media screen and (max-width: 650px){
+    #home-page-banner{
+        margin-top: 20%;
+        /* flex-wrap: wrap-reverse;
+        margin-top: 10vh; */
+        display: block;
+        text-align: right;
+        height: 65vh;
+        margin-bottom: 15vh;
+    }
+    h2{
+        font-size: 2rem;
+        padding: 0% 50px;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .col-lg-4{
+        margin-bottom: 20px;
+    }
+    .triple{
+        width: 70%;
+    }
+    #logo{
+        width: 70%;
+        margin-right: 15px;
+        position: relative;
+        z-index: 1;
+    }
+    #logo-img{
+        display: none;
+    }
+    #logo-img-responsive{
+        display: block;
+        width: 230px;
+        position: relative;
+        top: -10vh;
+        border-radius: 50%;
+        z-index: 0;
+        margin-left: 10%;
+    }
+    #thesecondcontainer h2{
+        padding: 0;
+        font-size: 2.7rem;
+        margin-left: 30px;
+    }
+    #thesecondcontainer{
+        margin-top: 70px;
+    }
+    .flex-container{
+        /* flex-wrap: wrap;
+        justify-content: center; */
+        display: block;
+        text-align: center;
+    }
+    .img-container{
+        max-width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #thesecondcontainer p{
+        padding: 0px;
+        margin-top: 35px;
+    }
+    .myButton{
+        margin: 20px 0;
+    }
+}

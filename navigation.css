@@ -1,0 +1,133 @@
+#menu-bar{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+a{
+    all: unset;
+}
+#current-page-link{
+    color: black;
+}
+hr{
+    background-color: #d2ab66;
+    height: 2px;
+    border: 0;
+    width: 50%;
+}
+.navbar-links{
+    width: 80%;
+    margin: auto;
+}
+h2:hover{
+    color: #d2ab66;
+    text-decoration: none;
+}
+a h2{
+    font-family: 'Lato', sans-serif;
+    color: #7b7b7b;
+    font-size: 2rem;
+    font-weight: 350;
+}
+.navbar-links ul{
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    margin-top: 3rem;
+}
+.menu-btn{
+    top: 40px;
+    right: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_shape{
+    width: 45px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+.menu-btn_shape::before,
+.menu-btn_shape::after{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn_shape::before{
+    transform: translateY(-16px);
+}
+.menu-btn_shape::after{
+    transform: translateY(16px);
+}
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn_shape{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn_shape::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_shape::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media screen and (max-width: 700px){
+    .menu-btn{
+        top: 1.3rem;
+        right: 1rem;
+    }
+    .navbar-links ul{
+        top: 1.8rem
+    }
+    .navbar-links li h2{
+        padding: 0;
+    }
+    .navbar-links{
+        width: 50%;
+    }
+    .menu-btn_shape{
+        width: 35px;
+    }
+    .menu-btn_shape::before,
+    .menu-btn_shape::after{
+    width: 35px;
+    }
+    hr{
+        width: 100%;
+    }
+    .menu-btn_shape::before{
+        transform: translateY(-13px);
+    }
+    .menu-btn_shape::after{
+        transform: translateY(13px);
+    }
+    .navbar-links ul{
+        margin-top: 1rem;
+    }
+}
