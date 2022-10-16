@@ -15,7 +15,7 @@ p{
 }
 @font-face{
     font-family: 'tuesdayNight';
-    src: url(TuesdayNight-Regular.otf);
+    src: url("TuesdayNight-Regular.otf");
 }
 .animation{
     opacity: 0;
