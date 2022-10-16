@@ -15,10 +15,7 @@ p{
 }
 @font-face{
     font-family: 'tuesdayNight';
-    src: url("TuesdayNight-Regular.otf");
-}
-.animation{
-    opacity: 0;
+    src: url('TuesdayNight-Regular.otf');
 }
 .myButton {
 	background-color:#000000;
